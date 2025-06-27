@@ -1,7 +1,7 @@
 # 🚀 CLARITY Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Version](https://img.shields.io/badge/version-1.3-blue.svg)
+![Version](https://img.shields.io/badge/version-1.4-blue.svg)
 ![Framework](https://img.shields.io/badge/type-methodology-green.svg)
 ![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)
 [![Contributors](https://img.shields.io/github/contributors/adrian-d-hidalgo/clarity-framework.svg)](https://github.com/adrian-d-hidalgo/clarity-framework/graphs/contributors)
@@ -9,7 +9,7 @@
 
 A structured approach to creating complete product specifications through human planning (with AI assistance) that enables AI systems to build exactly what you envision, with minimal human validation needed.
 
-**Current Version: 1.3** | [View Changelog](CHANGELOG.md)
+**Current Version: 1.4** | [View Changelog](CHANGELOG.md)
 
 ---
 
@@ -116,7 +116,12 @@ You follow a sequence of documents organized by **roles** that, when completed, 
 ### **Step 2: Set Up Structure** (5 minutes)
 
 ```bash
+# Create project structure
 mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas},quality}
+
+# Initialize framework configuration
+cp templates/CLARITY_template.md CLARITY.md
+# Edit CLARITY.md to set your project parameters
 ```
 
 ### **Step 3: Start with Business Context** (Now)
@@ -195,17 +200,24 @@ mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas}
 
 ### **📝 Work Templates**
 
-| Template                                                                        | Role      | Location               | Purpose                  |
-| ------------------------------------------------------------------------------- | --------- | ---------------------- | ------------------------ |
-| **[Project README](templates/README_project_template.md)**                      | Setup     | `README.md`            | Project navigation guide |
-| **[Business Context](templates/01_business_context_template.md)**               | PM        | `.handbook/product/`   | Foundation for decisions |
-| **[Domain Expertise](templates/02_domain_expertise_template.md)**               | PM        | `.handbook/product/`   | Specialized knowledge    |
-| **[Product Definition](templates/03_product_definition_template.md)**           | PM        | `.handbook/product/`   | What to build            |
-| **[Experience Design](templates/04_experience_design_template.md)**             | Designer  | `.handbook/design/`    | How it works             |
-| **[Functional Requirements](templates/05_functional_requirements_template.md)** | PM        | `.handbook/product/`   | System logic             |
-| **[Technical Architecture](templates/06_technical_architecture_template.md)**   | Architect | `.handbook/technical/` | How to build             |
-| **[Quality Validation](templates/07_quality_validation_template.md)**           | PM        | `.handbook/product/`   | How to verify            |
-| **[QA Deliverables](templates/08_qa_deliverables_template.md)**                 | QA Lead   | `.handbook/quality/`   | Testing execution        |
+| Template                                                   | Role  | Location     | Purpose                  |
+| ---------------------------------------------------------- | ----- | ------------ | ------------------------ |
+| **[Project README](templates/README_project_template.md)** | Setup | `README.md`  | Project navigation guide |
+| **[CLARITY Configuration](templates/CLARITY_template.md)** | Setup | `CLARITY.md` | Project configuration    |
+
+### **⚙️ Configuration Files**
+
+| File                                                                            | Purpose                                                        | Location               | Content                                         |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------- | ----------------------------------------------- |
+| **`CLARITY.md`**                                                                | Project configuration, status tracking, and version management | Project root           | Complete project metadata and framework version |
+| **[Business Context](templates/01_business_context_template.md)**               | PM                                                             | `.handbook/product/`   | Foundation for decisions                        |
+| **[Domain Expertise](templates/02_domain_expertise_template.md)**               | PM                                                             | `.handbook/product/`   | Specialized knowledge                           |
+| **[Product Definition](templates/03_product_definition_template.md)**           | PM                                                             | `.handbook/product/`   | What to build                                   |
+| **[Experience Design](templates/04_experience_design_template.md)**             | Designer                                                       | `.handbook/design/`    | How it works                                    |
+| **[Functional Requirements](templates/05_functional_requirements_template.md)** | PM                                                             | `.handbook/product/`   | System logic                                    |
+| **[Technical Architecture](templates/06_technical_architecture_template.md)**   | Architect                                                      | `.handbook/technical/` | How to build                                    |
+| **[Quality Validation](templates/07_quality_validation_template.md)**           | PM                                                             | `.handbook/product/`   | How to verify                                   |
+| **[QA Deliverables](templates/08_qa_deliverables_template.md)**                 | QA Lead                                                        | `.handbook/quality/`   | Testing execution                               |
 
 ### **🤖 AI-Assisted Framework Utilities**
 

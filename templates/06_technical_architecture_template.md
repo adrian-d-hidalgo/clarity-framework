@@ -301,7 +301,7 @@ containerization:
 
 deployment_strategy:
   approach: "[Blue-green/Rolling/Canary]"
-  automation_tool: "[GitHub Actions/Jenkins/GitLab CI]"
+  automation_tool: "[CI/CD platform of choice]"
   environment_promotion: "[How code moves through environments]"
 
 environments:
@@ -856,9 +856,7 @@ critical_security_controls:
 
 ```yaml
 document_info:
-
   status: "[DRAFT/FINAL]"
-
 
 stakeholders:
   primary_author: "[Name and role]"

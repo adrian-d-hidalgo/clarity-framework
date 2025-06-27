@@ -8,6 +8,7 @@ You are an expert at systematically updating project specifications to comply wi
 - **Changelog Location**: https://github.com/adrian-d-hidalgo/clarity-framework/blob/main/CHANGELOG.md
 - **Templates Source**: https://github.com/adrian-d-hidalgo/clarity-framework/tree/main/templates
 - **Current Project**: `.handbook/` directory contains current implementation
+- **Project Configuration**: `CLARITY.md` file in project root for project-specific framework configuration and version tracking
 
 ## Methodology
 
@@ -44,7 +45,8 @@ When this command is invoked, follow this systematic process that works for ANY 
 
    **A. Implementation Level Detection**:
 
-   - Identify current framework implementation level (Basic/Standard/Advanced) by analyzing:
+   - **Primary**: Read implementation level from `CLARITY.md` if file exists
+   - **Fallback**: Analyze project characteristics to determine level:
      - Number of documents present vs framework requirements
      - Depth and completeness of existing content
      - Project scope indicators in business-context.md
@@ -60,7 +62,7 @@ When this command is invoked, follow this systematic process that works for ANY 
 
    **C. Usage Pattern Assessment**:
 
-   - Analyze `CLAUDE.md` or project README to understand which documents are actively referenced
+   - Analyze project README and documentation structure to understand which documents are actively referenced
    - Check for evidence of documents being used in development workflow
    - Identify documents that exist but may not be integrated into project workflow
    - Look for custom files or sections that indicate specialized project needs
@@ -74,11 +76,119 @@ When this command is invoked, follow this systematic process that works for ANY 
 
    **E. Current Framework Version & Customizations**:
 
-   - Extract current framework version from document headers, CLAUDE.md, or metadata
+   - **Extract current framework version and project configuration**:
+     - **PRIMARY**: Read framework version and implementation level from `CLARITY.md`
+     - **SECONDARY**: Extract version from consistent document headers across `.handbook/` files
+     - **LEGACY DETECTION**: Comprehensive legacy project analysis for version-less projects
+     - **FALLBACK**: Structure-based version inference with confidence scoring
    - List all files in `.handbook/` directory structure
    - Identify any non-standard files or custom additions
    - Document any framework template modifications or extensions
    - Note any project-specific naming conventions or organizational patterns
+
+   **F. Legacy Project Version Detection Strategy**:
+
+   When no explicit version information is found, perform systematic legacy analysis:
+
+   **LEGACY CLASSIFICATION**:
+
+   - **Pre-Framework**: Projects with no `.handbook/` structure or framework patterns
+   - **Early Framework (v1.0-1.1)**: Has basic `.handbook/` but no CHANGELOG references, hardcoded versions
+   - **Mid Framework (v1.2-1.3)**: Has role recommendations, updated principles, but no CLARITY.md
+   - **Recent Framework (v1.3+)**: Has framework utilities, prompts directory, but outdated
+
+   **STRUCTURAL VERSION INFERENCE**:
+
+   ```
+   VERSION DETECTION MATRIX:
+
+   PRE-v1.0 Indicators:
+   ✓ No .handbook/ directory
+   ✓ Single document approach (README-only specifications)
+   ✓ No template structure
+   ✓ Ad-hoc documentation organization
+
+   v1.0-1.1 Indicators:
+   ✓ Basic .handbook/ structure with numbered templates
+   ✓ Hardcoded version references in document headers
+   ✓ No "Recommended Owner" fields in templates
+   ✓ Missing quality/ folder structure
+
+   v1.2 Indicators:
+   ✓ "Recommended Owner" fields present
+   ✓ Updated time estimates (2-3, 4-7, 8-12 weeks)
+   ✓ quality/ folder in structure
+   ✓ No prompts/ directory
+
+       v1.3 Indicators:
+    ✓ prompts/ directory exists
+    ✓ FRAMEWORK_UTILITIES.md reference
+    ✓ No CLARITY.md configuration system
+    ✓ framework-update-command.md exists but uses fallback version detection
+
+   v1.4+ Indicators:
+   ✓ CLARITY.md configuration system
+   ✓ Implementation level decision matrix
+   ✓ Framework compliance prompts exist
+   ```
+
+   **CONTENT ANALYSIS VERSION DETECTION**:
+
+   - Analyze document headers for version patterns
+   - Check for framework-specific terminology evolution
+   - Identify time estimate formats (older: "2-4 weeks" vs newer: "2-3 weeks")
+   - Look for role assignment patterns
+   - Examine file naming conventions
+
+   **VERSION CONFIDENCE SCORING**:
+
+   - **High Confidence (90%+)**: Multiple consistent indicators point to specific version
+   - **Medium Confidence (70-89%)**: Most indicators align, minor inconsistencies
+   - **Low Confidence (50-69%)**: Mixed indicators, requires conservative approach
+   - **Unknown (<50%)**: Insufficient information, treat as custom/pre-framework project
+
+   **G. Version Jump Detection & Sequential Migration Strategy**:
+
+   When project version is significantly behind current framework:
+
+   **VERSION GAP ANALYSIS**:
+
+   - Calculate version distance (current → target)
+   - Identify major breaking changes between versions
+   - Assess cumulative complexity of multiple updates
+   - **JUMP CATEGORIES**:
+     - **Single Version**: Current + 1 version (direct migration)
+     - **Small Jump**: 2-3 versions behind (sequential with validation)
+     - **Major Jump**: 4+ versions behind (staged migration with checkpoints)
+     - **Legacy Jump**: Pre-v1.0 to current (full framework adoption)
+
+   **SEQUENTIAL MIGRATION PLANNING**:
+
+   ```
+   MAJOR VERSION JUMP STRATEGY:
+
+   Phase 1: Framework Foundation
+   - Establish basic .handbook/ structure
+   - Create framework-compatible document organization
+   - Preserve all existing content in appropriate locations
+
+   Phase 2: Incremental Version Updates
+   - Update version by version with validation at each step
+   - Apply cumulative changes systematically
+   - Maintain content integrity throughout process
+
+   Phase 3: Current Version Alignment
+   - Apply latest framework standards
+   - Ensure full compliance with current version
+   - Validate complete migration success
+   ```
+
+   **BREAKING CHANGE MANAGEMENT**:
+
+   - **Document Structural Changes**: Track when document templates change significantly
+   - **Content Migration Rules**: Map how content moves between versions
+   - **Deprecation Handling**: Manage obsolete sections and documents
+   - **New Feature Integration**: Add new framework capabilities progressively
 
 2. **Framework State Discovery**:
 
@@ -160,9 +270,44 @@ When this command is invoked, follow this systematic process that works for ANY 
 
 4. **Version Jump Management**:
 
-   - **Multiple Version Updates**: Break down into sequential migrations
-   - **Incremental Validation**: Validate framework compliance after each version step
-   - **Checkpoint Strategy**: Create backups before each major migration step
+   **SEQUENTIAL MIGRATION EXECUTION**:
+
+   **For Small Jumps (2-3 versions)**:
+
+   - Execute step-by-step migration through each intermediate version
+   - Apply changelog-based updates sequentially
+   - Validate framework compliance after each version step
+   - **Example**: v1.1 → v1.2 → v1.3 → v1.4 (current)
+
+   **For Major Jumps (4+ versions)**:
+
+   - **Phase 1 - Foundation**: Establish current framework basic structure
+   - **Phase 2 - Incremental**: Apply major changes in logical groups
+   - **Phase 3 - Current**: Finalize with latest framework standards
+   - Create migration checkpoints with rollback capability
+
+   **For Legacy Projects (Pre-framework → Current)**:
+
+   - **Assessment**: Classify existing documentation type and quality
+   - **Framework Adoption**: Implement complete framework structure
+   - **Content Migration**: Map existing content to framework documents
+   - **Modernization**: Apply all framework standards and best practices
+
+   **VERSION-SPECIFIC BREAKING CHANGES**:
+
+   ```
+   v1.0 → v1.1: Centralized version management, removed hardcoded versions
+   v1.1 → v1.2: Added role recommendations, updated time estimates
+   v1.2 → v1.3: Added framework utilities, prompts directory
+   v1.3 → v1.4: CLARITY.md system, implementation decision matrix, compliance tools
+   ```
+
+   **CHECKPOINT STRATEGY**:
+
+   - **Before Each Version**: Create backup of current state
+   - **Validation Point**: Verify framework compliance for intermediate version
+   - **Rollback Plan**: Clear recovery strategy if migration fails
+   - **Progress Tracking**: Document successful migration steps
 
 5. **Conflict Resolution Process**:
 
@@ -266,7 +411,12 @@ When this command is invoked, follow this systematic process that works for ANY 
 
 3. **Project Integration & Final Validation**:
 
-   - Update `CLAUDE.md` to reference new framework version
+   - **Initialize/Update CLARITY.md**:
+   - If `CLARITY.md` doesn't exist, create from template with project context and current framework version
+   - If exists, update framework version and document status
+   - Reflect any new documents or structural changes in document status table
+   - Update implementation level if migration changed project complexity
+   - **Tool Integration**: Update development tool configurations to reference new framework version (if applicable)
    - Test that documentation structure supports development workflow
    - Ensure all stakeholders can find information in expected locations
    - Validate that migrated documents still serve their intended purpose for the project team
@@ -279,7 +429,7 @@ When this command is invoked, follow this systematic process that works for ANY 
    ✅ **Content Preservation**: All critical business information preserved (no data loss)  
    ✅ **Content Organization**: All content located in correct document per framework guidelines  
    ✅ **Cross-References**: All document dependencies and references work correctly  
-   ✅ **Version Consistency**: `CLAUDE.md` and document headers reflect correct framework version  
+   ✅ **Version Consistency**: `CLARITY.md` framework version and document headers reflect correct framework version  
    ✅ **Dependency Chain**: Upstream/downstream document relationships intact  
    ✅ **Project Usability**: Team can effectively use updated documentation structure
 
@@ -329,6 +479,22 @@ When this command is invoked, follow this systematic process that works for ANY 
 - Significant content restructuring
 - Duration: 1-3 hours
 
+**Legacy Project Migration** (Pre-framework or very old versions):
+
+- Complete framework structure implementation
+- Content analysis and framework mapping
+- Progressive feature adoption (Basic → Standard → Advanced levels)
+- Extensive content preservation and organization
+- Duration: 2-4 hours
+
+**Version Jump Migration** (4+ versions behind):
+
+- **Small Jump (2-3 versions)**: Sequential version-by-version updates (45-90 minutes)
+- **Major Jump (4+ versions)**: Staged migration with checkpoints (2-3 hours)
+- **Legacy Jump (Pre-v1.0)**: Full framework adoption process (3-5 hours)
+- Version-specific breaking change handling
+- Comprehensive validation at each checkpoint
+
 **Manual Escalation** (Beyond automated capability):
 
 - Clear documentation of what cannot be automated
@@ -360,6 +526,37 @@ When this command is invoked, follow this systematic process that works for ANY 
 - **Content maturity matches**: Migration preserves existing completion level
 - **Usage patterns maintained**: Changes don't disrupt active workflows
 
+### Legacy Project Handling Strategy
+
+**Pre-Framework Projects** (No .handbook/ structure):
+
+- **Assessment Phase**:
+  - Inventory all existing documentation (README, docs/, specifications/)
+  - Classify content by framework document categories
+  - Identify project scope and recommend implementation level
+- **Foundation Phase**:
+  - Create complete .handbook/ structure
+  - Establish CLARITY.md with detected project characteristics
+  - Map existing content to appropriate framework documents
+- **Migration Phase**:
+  - Preserve all valuable content while organizing per framework
+  - Add framework structure around existing content
+  - Fill gaps with TODO placeholders for missing sections
+
+**Early Framework Projects** (v1.0-v1.2):
+
+- **Structure Update**: Modernize .handbook/ organization
+- **Content Migration**: Apply version-specific content moves
+- **Progressive Enhancement**: Add new framework features incrementally
+- **Version Tracking**: Implement CLARITY.md system
+
+**Version Jump Projects** (Multiple versions behind):
+
+- **Gap Analysis**: Identify all cumulative changes needed
+- **Staged Migration**: Apply changes in logical version groups
+- **Validation Points**: Verify compliance at each major milestone
+- **Risk Mitigation**: Preserve rollback capability throughout process
+
 ### Implementation Level-Specific Guidelines
 
 **Basic Level Projects**:
@@ -388,7 +585,7 @@ When this command is invoked, follow this systematic process that works for ANY 
 1. **Framework Repository**: Access https://github.com/adrian-d-hidalgo/clarity-framework directly
 2. **CHANGELOG.md**: Primary source for understanding changes between versions
 3. **Templates Directory**: Latest structure and format requirements
-4. **Current Project**: `.handbook/` directory and `CLAUDE.md` for existing implementation
+4. **Current Project**: `.handbook/` directory for existing implementation
 
 ### Quality Assurance
 
@@ -416,7 +613,7 @@ When this command is invoked, follow this systematic process that works for ANY 
 ✅ **Content Placement**: All content is located in correct document per framework guidelines  
 ✅ **Structural Integrity**: Document dependencies and cross-references work correctly  
 ✅ **Project Usability**: Updated documentation effectively supports project development  
-✅ **Version Tracking**: `CLAUDE.md` and document headers reflect correct framework version  
+✅ **Version Tracking**: `CLARITY.md` framework version and document headers reflect correct framework version  
 ✅ **Clean Implementation**: `.handbook/` structure is organized and framework-compliant
 
 ## Migration Philosophy
@@ -427,6 +624,80 @@ When this command is invoked, follow this systematic process that works for ANY 
 **Systematic Approach**: Follow dependency order to avoid breaking cross-document references  
 **Cascade Awareness**: Always check downstream impacts when upstream documents change  
 **Stakeholder Focus**: Ensure updated documentation serves project team's development needs
+
+## Legacy Project Migration Examples
+
+### Example 1: Pre-Framework Project
+
+**Scenario**: Project has single README.md with mixed content, no .handbook/ structure
+
+**Detection Indicators**:
+
+- No .handbook/ directory
+- Single document contains business context, technical specs, and requirements mixed together
+- Ad-hoc organization without framework patterns
+
+**Migration Strategy**:
+
+1. **Content Analysis**: Parse README.md to identify framework-mappable content
+2. **Structure Creation**: Create .handbook/ with appropriate documents for detected implementation level
+3. **Content Distribution**: Map content sections to appropriate framework documents
+4. **Gap Filling**: Add TODO placeholders for missing framework sections
+5. **CLARITY.md Setup**: Initialize configuration with inferred project characteristics
+
+### Example 2: Early Framework (v1.0) to Current
+
+**Scenario**: Project has .handbook/ with numbered templates, hardcoded versions in headers
+
+**Detection Indicators**:
+
+- Templates named with numbers (01_business_context_template.md)
+- Document headers contain hardcoded version references
+- No "Recommended Owner" fields
+- Missing quality/ folder
+
+**Migration Strategy**:
+
+1. **Version-by-Version**: v1.0 → v1.1 (remove hardcoded versions) → v1.2 (add role fields) → v1.3 (add utilities) → v1.4 (CLARITY.md system)
+2. **Checkpoint Validation**: Verify framework compliance after each version step
+3. **Content Preservation**: Maintain all existing content while updating structure
+4. **Progressive Enhancement**: Add new framework features without disrupting existing workflow
+
+### Example 3: Version Jump (v1.1 → v1.4)
+
+**Scenario**: Project is 3 versions behind with custom modifications
+
+**Detection Indicators**:
+
+- CHANGELOG.md references or document headers show v1.1
+- Has basic structure but missing recent framework features
+- Custom sections added beyond standard framework
+
+**Migration Strategy**:
+
+1. **Gap Analysis**: Identify all changes between v1.1 and v1.4
+2. **Custom Content Preservation**: Catalog and preserve all custom modifications
+3. **Staged Migration**: Apply v1.1→v1.2→v1.3→v1.4 changes systematically
+4. **Custom Integration**: Integrate preserved customizations with new framework structure
+5. **Compliance Validation**: Ensure final result meets v1.4 standards while preserving custom value
+
+### Example 4: Unknown Version with Mixed Compliance
+
+**Scenario**: Project has partial framework adoption, inconsistent version indicators
+
+**Detection Indicators**:
+
+- Mixed version references across documents
+- Some framework patterns present, others missing
+- Unclear implementation level
+
+**Migration Strategy**:
+
+1. **Conservative Assessment**: Treat as lowest detected version
+2. **Content Audit**: Catalog all existing content and framework compliance level
+3. **Incremental Updates**: Apply framework improvements progressively
+4. **Validation-Heavy Approach**: Extra validation at each step due to uncertainty
+5. **User Consultation**: Escalate ambiguous cases for manual decision
 
 ## Document Dependency Chain
 

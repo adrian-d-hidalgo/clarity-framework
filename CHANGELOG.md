@@ -4,6 +4,20 @@ All notable changes to the CLARITY Framework will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.4] - 2024-12-19
+
+### Added
+
+- **CLARITY.md Configuration System**: New centralized project configuration file that combines version tracking, implementation level selection, project metadata, and guided setup with `[CHOOSE: option1 | option2]` format for easy parameter selection
+- **Implementation Level Decision Matrix**: Clear guidance in CLARITY template to help projects choose between Basic (2-3 weeks), Standard (4-7 weeks), and Advanced (8-12 weeks) levels
+- **Quick Setup Guide**: Step-by-step initialization process built into CLARITY template
+- **Framework Compliance Prompts**: Two new specialized prompts - `framework-compliance-validator.md` for analyzing project compliance and `framework-compliance-fixer.md` for systematically resolving compliance issues
+
+### Changed
+
+- **Framework Tools Integration**: Enhanced `framework-update-command.md` with robust legacy project support and version jump handling
+- **Tool Independence**: Removed all specific tool dependencies (CLAUDE.md, IDE-specific references) making framework completely tool-agnostic and portable across any development environment
+
 ## [1.3] - 2025-06-27
 
 ### Added
