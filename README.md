@@ -1,15 +1,15 @@
 # 🚀 CLARITY Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Version](https://img.shields.io/badge/version-1.1-blue.svg)
+![Version](https://img.shields.io/badge/version-1.2-blue.svg)
 ![Framework](https://img.shields.io/badge/type-methodology-green.svg)
 ![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)
 [![Contributors](https://img.shields.io/github/contributors/adrian-d-hidalgo/clarity-framework.svg)](https://github.com/adrian-d-hidalgo/clarity-framework/graphs/contributors)
 ![Last Commit](https://img.shields.io/github/last-commit/adrian-d-hidalgo/clarity-framework.svg)
 
-A structured approach to creating complete product specifications that transform project ideas into detailed documentation, guiding development teams and AI systems to build what you envision while reducing miscommunication and costly iterations.
+A structured approach to creating complete product specifications through human planning (with AI assistance) that enables AI systems to build exactly what you envision, with minimal human validation needed.
 
-**Current Version: 1.1** | [View Changelog](CHANGELOG.md)
+**Current Version: 1.2** | [View Changelog](CHANGELOG.md)
 
 ---
 
@@ -22,6 +22,7 @@ A structured approach to creating complete product specifications that transform
 - 🔄 Multiple iterations required due to incomplete specifications
 - ⏰ Projects extend beyond deadlines due to unclear requirements
 - 🤖 AI development tools produce unusable results from vague prompts
+- 🔄 Human-AI handoffs fail due to incomplete specifications
 
 **CLARITY Framework eliminates these issues through systematic specification.**
 
@@ -42,19 +43,19 @@ A structured approach to creating complete product specifications that transform
 ### **👥 Need to organize a team?**
 
 1. **[COLLABORATION_GUIDE.md](framework/COLLABORATION_GUIDE.md)** → Roles and responsibilities
-2. **[IMPLEMENTATION_PATHS.md](IMPLEMENTATION_PATHS.md)** → Strategies by project type
+2. **[IMPLEMENTATION_PATHS.md](framework/IMPLEMENTATION_PATHS.md)** → Strategies by project type
 
 ---
 
 ## ✨ What is CLARITY Framework?
 
-A **systematic framework** for creating specifications so complete and clear that any team (human or AI) can build exactly what you need, without misunderstandings.
+A **systematic framework** for human teams to create specifications (with AI assistance) so complete and clear that AI systems can build exactly what you need, with minimal human intervention.
 
 ### **Think of it as "architectural blueprints" for software**
 
 - 🏗️ **Architect → Builder**: Blueprint defines exactly what to construct
-- 💻 **You → Developers**: CLARITY Framework defines exactly what to program
-- 🎯 **Result**: You get exactly what you envisioned, without surprises
+- 💻 **You → AI Developer**: CLARITY Framework defines exactly what to program
+- 🎯 **Result**: AI builds exactly what you envisioned, with minimal human validation
 
 ---
 
@@ -76,11 +77,11 @@ You follow a sequence of documents organized by **roles** that, when completed, 
 
 ### **⏱️ Time Investment & Completeness Levels**
 
-| Level           | Time      | Ideal For                                     | Result                                              |
-| --------------- | --------- | --------------------------------------------- | --------------------------------------------------- |
-| **🥉 Basic**    | 1-2 weeks | MVPs, prototypes, concept validation          | Minimum viable specification for development        |
-| **🥈 Standard** | 3-5 weeks | Professional products, small-medium teams     | Complete specification for development teams        |
-| **🥇 Advanced** | 6-8 weeks | Enterprise solutions, compliance requirements | Exhaustive specification for enterprise development |
+| Level           | Planning Time | Ideal For                                     | Result                                              |
+| --------------- | ------------- | --------------------------------------------- | --------------------------------------------------- |
+| **🥉 Basic**    | 2-3 weeks     | MVPs, prototypes, concept validation          | Minimum viable specification for AI development     |
+| **🥈 Standard** | 4-7 weeks     | Professional products, small-medium teams     | Complete specification for AI development           |
+| **🥇 Advanced** | 8-12 weeks    | Enterprise solutions, compliance requirements | Exhaustive specification for enterprise AI development |
 
 ---
 
@@ -108,9 +109,9 @@ You follow a sequence of documents organized by **roles** that, when completed, 
 
 ### **Step 1: Choose Your Level** (2 minutes)
 
-- **Basic**: MVP or prototype → 1-2 weeks
-- **Standard**: Professional product → 3-5 weeks
-- **Advanced**: Enterprise solution → 6-8 weeks
+- **Basic**: MVP or prototype → 2-3 weeks (includes meetings, reviews)
+- **Standard**: Professional product → 4-7 weeks (includes stakeholder alignment)
+- **Advanced**: Enterprise solution → 8-12 weeks (includes compliance validation)
 
 ### **Step 2: Set Up Structure** (5 minutes)
 
@@ -143,7 +144,7 @@ mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas}
 - **Architecture**: React Native + AWS + PostgreSQL
 - **Validation**: 47 verifiable acceptance criteria
 
-**Result**: 200+ page specification ready for development
+**Result**: 200+ page specification ready for AI development
 
 ### **🏢 Enterprise CRM Example**
 
@@ -163,20 +164,20 @@ mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas}
 
 ### **📋 Complete Specification Including:**
 
-✅ **Exact description** of each functionality  
-✅ **Detailed designs** of all screens  
-✅ **Complete and justified** technical architecture  
-✅ **Verifiable acceptance criteria**  
+✅ **Exact description** of each functionality for AI implementation  
+✅ **Detailed designs** of all screens with precise specifications  
+✅ **Complete and justified** technical architecture for autonomous development  
+✅ **Verifiable acceptance criteria** for AI validation  
 ✅ **Testing plan** for quality validation  
 ✅ **Documentation** for future maintenance
 
 ### **🎁 Immediate Benefits:**
 
 - **💸 Cost savings**: No expensive iterations due to misunderstandings
-- **⏰ Time savings**: Direct development without back-and-forth
+- **⏰ Time savings**: AI develops directly with minimal human intervention
 - **🎯 Exact results**: You get what you actually need
 - **📈 Scalability**: Solid foundation for future growth
-- **🤝 Better communication**: Everyone understands exactly what to build
+- **🤝 Better human-AI handoff**: AI understands exactly what to build
 
 ---
 
@@ -229,11 +230,11 @@ mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas}
 
 ## 🏆 What You'll Have When Done
 
-### **📋 Development-Ready Documentation**
+### **📋 AI-Development-Ready Documentation**
 
-- Specifications any developer can follow
-- Verifiable acceptance criteria
-- Complete and justified technical architecture
+- Specifications any AI system can follow autonomously
+- Verifiable acceptance criteria for automated validation
+- Complete and justified technical architecture for AI implementation
 
 ### **💰 Immediate ROI**
 
@@ -253,4 +254,6 @@ mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas}
 
 **Next step**: Read **[METHODOLOGY.md](framework/METHODOLOGY.md)** for the complete step-by-step process
 
-_💡 **Quick tip**: If you have 10 minutes now, go directly to [METHODOLOGY.md](framework/METHODOLOGY.md) and start with step 1. In 1-2 weeks you'll have complete specifications for your project._
+_💡 **Quick tip**: If you have 10 minutes now, go directly to [METHODOLOGY.md](framework/METHODOLOGY.md) and start with step 1. In 2-12 weeks (depending on complexity), your team will have complete specifications ready for AI development._
+
+_🤖 **AI-Ready**: The resulting specifications are designed to enable AI systems to build your product with minimal human intervention._

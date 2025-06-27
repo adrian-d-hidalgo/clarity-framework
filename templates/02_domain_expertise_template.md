@@ -1,7 +1,7 @@
 # 🧠 Domain Expertise
 
 **Document:** domain-expertise  
-**Date:** [YYYY-MM-DD]  
+**Recommended Owner:** Product Manager (with Domain Expert consultation)  
 **Security Level:** [Standard/Elevated/Critical]
 
 ---
@@ -37,6 +37,8 @@
 
 This document captures **specialized knowledge specific to the industry or domain** that is essential for creating correct product specifications. It includes scientific principles, industry standards, regulatory requirements, and expert knowledge that teams need to build domain-appropriate solutions.
 
+> **Critical Distinction:** This document focuses on **business domain expertise** (industry-specific knowledge, regulations, scientific principles) NOT technical domain expertise (programming frameworks, databases, infrastructure). Domain expertise comes from industry experts and professionals, not software engineers.
+
 > **Principle:** Only include domain knowledge that directly influences product design, development decisions, or system behavior.
 
 ---
@@ -45,11 +47,13 @@ This document captures **specialized knowledge specific to the industry or domai
 
 ### **REQUIRED for:**
 
-- **Regulated Industries**: Fintech, healthcare, legal, aerospace, pharmaceuticals
-- **Scientific Domains**: Fitness, medicine, engineering, research, analytics
-- **Complex Algorithms**: AI/ML, financial modeling, optimization systems
-- **Industry Standards**: Manufacturing, automotive, energy, telecommunications
-- **Safety-Critical Systems**: Medical devices, transportation, industrial control
+- **Regulated Industries**: Fintech (banking laws), healthcare (medical protocols), legal (jurisprudence), aerospace (safety regulations), pharmaceuticals (FDA requirements)
+- **Scientific Domains**: Fitness (exercise physiology), medicine (clinical protocols), engineering (physics principles), research (methodology), analytics (statistical principles)
+- **Complex Domain Algorithms**: Financial risk models, medical diagnostics, scientific calculations, industrial optimization
+- **Industry Standards**: Manufacturing (quality standards), automotive (safety protocols), energy (grid regulations), telecommunications (spectrum management)
+- **Safety-Critical Systems**: Medical devices (clinical safety), transportation (regulatory compliance), industrial control (safety protocols)
+
+> **Note:** These require expertise from industry professionals, not software developers.
 
 ### **OPTIONAL for:**
 
@@ -64,20 +68,22 @@ This document captures **specialized knowledge specific to the industry or domai
 ### **Fundamental Laws and Rules**
 
 ```yaml
+# Examples: Physics laws in engineering, metabolic principles in fitness, 
+# pharmacological principles in healthcare, economic principles in fintech
 scientific_principles:
   principle_1:
-    name: "[Core principle name]"
-    description: "[What this principle governs]"
-    application: "[How it applies to product decisions]"
-    validation_method: "[How compliance is verified]"
-    exceptions: "[Any exceptions or special cases]"
+    name: "[Core principle name - e.g., 'Thermodynamics First Law', 'Maximum Heart Rate Formula']"
+    description: "[What this principle governs - domain science, not software]"
+    application: "[How it applies to product decisions - business logic impact]"
+    validation_method: "[How compliance is verified - domain validation, not code testing]"
+    exceptions: "[Any exceptions or special cases in the domain]"
 
   principle_2:
-    name: "[Core principle name]"
-    description: "[What this principle governs]"
-    application: "[How it applies to product decisions]"
-    validation_method: "[How compliance is verified]"
-    exceptions: "[Any exceptions or special cases]"
+    name: "[Core principle name - industry-specific, not technical]"
+    description: "[What this principle governs in the business domain]"
+    application: "[How it influences user workflows and business rules]"
+    validation_method: "[Domain expert validation methods]"
+    exceptions: "[Business domain exceptions]"
 
 regulatory_requirements:
   regulation_1:
@@ -529,9 +535,9 @@ domain_specific_ui_patterns:
 
 ```yaml
 document_info:
-  creation_date: "[YYYY-MM-DD]"
-  last_updated: "[YYYY-MM-DD]"
-  version: "[VERSION]"
+
+  status: "[DRAFT/FINAL]"
+
 
 stakeholders:
   primary_author: "[Name and role - Domain Expert]"
@@ -564,8 +570,8 @@ domain_metadata:
 ---
 
 document: "domain-expertise"
-version: "[VERSION]"
-last_updated: "[YYYY-MM-DD]"
+
+status: "[DRAFT/FINAL]"
 template_type: "domain_analysis"
 framework: "CLARITY Framework"
 role_primary: "Product Manager"

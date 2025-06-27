@@ -1,7 +1,7 @@
 # 🎨 Experience Design
 
 **Document:** experience-design  
-**Date:** [YYYY-MM-DD]  
+**Recommended Owner:** UX/UI Designer  
 **Security Level:** [Standard/Elevated/Critical]
 
 ---
@@ -42,7 +42,7 @@
 3. **Interface Design Specifications** - Core screens and interactions ⏱️ _120-180 min_
 4. **Accessibility Requirements** - Ensures inclusive design ⏱️ _45-60 min_
 
-**Total CORE time: 5-7 hours**
+**Total CORE time: 5-7 hours** _(human planning work with AI assistance)_
 
 ### **📈 EXTENDED Sections (Complete When Time Allows):**
 
@@ -142,28 +142,28 @@ journey_overview:
   success_outcome: "[How the user knows they succeeded]"
 
 journey_phases:
-  phase_1_awareness:
+  stage_1_discovery:
     user_state: "[User's mental state and context]"
     actions: "[What the user does]"
     touchpoints: "[Where they interact with the product]"
     pain_points: "[Potential frustrations or barriers]"
     opportunities: "[How the product can help]"
 
-  phase_2_consideration:
+  stage_2_evaluation:
     user_state: "[User's mental state and context]"
     actions: "[What the user does]"
     touchpoints: "[Where they interact with the product]"
     pain_points: "[Potential frustrations or barriers]"
     opportunities: "[How the product can help]"
 
-  phase_3_action:
+  stage_3_engagement:
     user_state: "[User's mental state and context]"
     actions: "[What the user does]"
     touchpoints: "[Where they interact with the product]"
     pain_points: "[Potential frustrations or barriers]"
     opportunities: "[How the product can help]"
 
-  phase_4_retention:
+  stage_4_continuation:
     user_state: "[User's mental state and context]"
     actions: "[What the user does]"
     touchpoints: "[Where they interact with the product]"
@@ -189,7 +189,7 @@ flow_overview:
   purpose: "[What this flow accomplishes]"
   entry_points: "[How users start this flow]"
   exit_points: "[How users complete or abandon this flow]"
-  estimated_duration: "[Expected time to complete]"
+  complexity_level: "[Simple/Medium/Complex user effort required]"
 
 flow_steps:
   step_1:
@@ -763,9 +763,9 @@ empty_states:
 
 ```yaml
 document_info:
-  creation_date: "[YYYY-MM-DD]"
-  last_updated: "[YYYY-MM-DD]"
-  version: "[VERSION]"
+
+  status: "[DRAFT/FINAL]"
+
 
 stakeholders:
   primary_author: "[Name and role]"

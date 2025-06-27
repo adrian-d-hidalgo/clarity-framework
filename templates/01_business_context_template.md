@@ -1,7 +1,7 @@
 # 🏢 Business Context
 
 **Document:** business-context  
-**Date:** [YYYY-MM-DD]  
+**Recommended Owner:** Product Manager  
 **Security Level:** [Standard/Elevated/Critical]
 
 ---
@@ -41,13 +41,13 @@
 3. **Security Requirements** - Affects technical architecture, compliance features ⏱️ _15-30 min_
 4. **Success Metrics and Priorities** - Affects monitoring, analytics, performance optimization ⏱️ _30-45 min_
 
-**Total CORE time: 2-3 hours**
+**Total CORE time: 2-3 hours** _(human planning work with AI assistance)_
 
 ### **📈 EXTENDED Sections (Complete When Time Allows):**
 
 1. **Detailed Competitive Analysis** - Affects feature prioritization, differentiation
-2. **Comprehensive Constraint Documentation** - Affects technology choices, timelines
-3. **Long-term Vision and Roadmap** - Affects scalability decisions, technical debt planning
+2. **Comprehensive Constraint Documentation** - Affects technology choices
+3. **Strategic Vision and Scope** - Affects scalability decisions, technical debt planning
 
 ---
 
@@ -75,7 +75,7 @@ When business and technical requirements conflict, use this priority framework:
 
 - **Choose Quality when:** Security critical, regulated industry, long-term product
 - **Choose Speed when:** Market window closing, proof of concept, competitive response
-- **Decision criteria:** Risk assessment > business timeline > technical debt tolerance
+- **Decision criteria:** Risk assessment > business urgency > technical debt tolerance
 
 **Cost vs Capability:**
 
@@ -286,10 +286,10 @@ budget_constraints:
   operational_budget: "[Ongoing operational budget limits]"
   cost_per_user_target: "[Target cost per user/transaction]"
 
-timeline_constraints:
-  market_window: "[When does the product need to be in market?]"
-  funding_milestones: "[Key dates tied to funding/investment]"
-  competitive_pressure: "[Timeline pressure from competition]"
+delivery_constraints:
+  market_readiness: "[What market conditions determine launch readiness?]"
+  funding_dependencies: "[What outcomes must be achieved for continued funding?]"
+  competitive_pressure: "[Feature parity or advantage requirements driven by competition]"
 
 resource_constraints:
   team_size_limits: "[Maximum team size available]"
@@ -384,9 +384,9 @@ market_dependencies:
 
 ```yaml
 document_info:
-  creation_date: "[YYYY-MM-DD]"
-  last_updated: "[YYYY-MM-DD]"
-  version: "[VERSION]"
+
+  status: "[DRAFT/FINAL]"
+
 
 stakeholders:
   primary_author: "[Name and role]"

@@ -2,6 +2,8 @@
 
 ## Complete Step-by-Step Process for Product Specification
 
+## (Human Planning + AI Assistance → AI Development + Human Validation)
+
 ---
 
 ## 📁 **Project Structure Requirements**
@@ -28,29 +30,31 @@ All CLARITY Framework specifications must be created within the `.handbook/` dir
 │       ├── wireframes/                # Low-fi designs (.png)
 │       ├── mockups/                   # High-fi designs (.png)
 │       └── prototypes/                # Interactive prototypes (.figma)
-└── technical/                         # Software Architect Responsibility
-    ├── architecture.md                # Technical design decisions
-    ├── standards/
-    │   ├── coding-standards.md        # Development guidelines
-    │   ├── testing-guidelines.md      # Testing strategy
-    │   ├── deployment-patterns.md     # Deployment strategy (STANDARD+)
-    │   ├── security-guidelines.md     # Security architecture (ADVANCED)
-    │   ├── performance-requirements.md # Performance specs (ADVANCED)
-    │   └── monitoring-strategy.md     # Observability (ADVANCED)
-    ├── diagrams/
-    │   ├── system-architecture.mmd    # System overview
-    │   ├── service-architecture.mmd   # Service decomposition (STANDARD+)
-    │   ├── domain-model.mmd           # Entity relationships
-    │   └── deployment-strategy.mmd    # Deployment architecture
-    ├── schemas/
-    │   ├── api-contracts.yml          # OpenAPI specifications
-    │   └── database-schema.sql        # Database structure
-    ├── infrastructure/                # ADVANCED only
-    │   └── infrastructure-as-code.tf  # IaC definitions
-    └── adrs/                          # ADVANCED only
-        ├── adr-001-initial-architecture.md
-        ├── adr-002-database-choice.md
-        └── adr-003-deployment-strategy.md
+├── technical/                         # Software Architect Responsibility
+│   ├── architecture.md                # Technical design decisions
+│   ├── standards/
+│   │   ├── coding-standards.md        # Development guidelines
+│   │   ├── testing-guidelines.md      # Testing strategy
+│   │   ├── deployment-patterns.md     # Deployment strategy (STANDARD+)
+│   │   ├── security-guidelines.md     # Security architecture (ADVANCED)
+│   │   ├── performance-requirements.md # Performance specs (ADVANCED)
+│   │   └── monitoring-strategy.md     # Observability (ADVANCED)
+│   ├── diagrams/
+│   │   ├── system-architecture.mmd    # System overview
+│   │   ├── service-architecture.mmd   # Service decomposition (STANDARD+)
+│   │   ├── domain-model.mmd           # Entity relationships
+│   │   └── deployment-strategy.mmd    # Deployment architecture
+│   ├── schemas/
+│   │   ├── api-contracts.yml          # OpenAPI specifications
+│   │   └── database-schema.sql        # Database structure
+│   ├── infrastructure/                # ADVANCED only
+│   │   └── infrastructure-as-code.tf  # IaC definitions
+│   └── adrs/                          # ADVANCED only
+│       ├── adr-001-initial-architecture.md
+│       ├── adr-002-database-choice.md
+│       └── adr-003-deployment-strategy.md
+└── quality/                           # QA Lead Responsibility
+    └── qa-deliverables.md             # Testing execution and QA processes
 ```
 
 ### **🚨 Critical Rules for AI Agents**
@@ -58,40 +62,45 @@ All CLARITY Framework specifications must be created within the `.handbook/` dir
 When implementing CLARITY Framework:
 
 1. **Always create files in `.handbook/`** - Never at root level
-2. **Respect role boundaries** - Product files in `product/`, Design files in `design/`, Technical files in `technical/`
+2. **Respect role boundaries** - Product files in `product/`, Design files in `design/`, Technical files in `technical/`, Quality files in `quality/`
 3. **Follow level requirements** - Only create files appropriate for the chosen level (BASIC/STANDARD/ADVANCED)
 4. **Use semantic names** - No numbered prefixes, use descriptive names
 5. **Organize in folders** - Group related files in appropriate subdirectories
 
 ---
 
-## 🎯 **Three-Phase Methodology**
+## 🎯 **Three-Phase Human Planning Methodology**
 
 ### **Phase 1: Discovery** (30% effort)
+**Recommended Lead:** Product Manager
 
 - **business-context**: Essential foundations for technical decisions
-- **domain-expertise**: Specialized sector knowledge (conditional)
+- **domain-expertise**: Specialized sector knowledge (conditional) - *Recommended: Product Manager with Domain Expert consultation*
 - **product-definition**: Scope and features for this version
 
 ### **Phase 2: Design** (45% effort)
+**Recommended Lead:** UX/UI Designer + Product Manager
 
-- **experience-design**: User interactions and interface specifications
-- **functional-requirements**: System logic and behavior
+- **experience-design**: User interactions and interface specifications - *Recommended: UX/UI Designer*
+- **functional-requirements**: System logic and behavior - *Recommended: Product Manager/Business Analyst*
 
-### **Phase 3: Implementation** (25% effort)
+### **Phase 3: Implementation Planning** (25% effort)
+**Recommended Lead:** Software Architect/Tech Lead
 
-- **architecture**: Technical construction plan
-- **quality-validation**: Verification and acceptance criteria
+- **architecture**: Technical construction plan - *Recommended: Software Architect*
+- **quality-validation**: Verification and acceptance criteria - *Recommended: QA Lead/Product Manager*
 
 ---
 
 ## 📊 **Completeness Levels**
 
+_**Planning Time Reality Check**: Times include meetings, stakeholder discussions, review cycles, feedback integration, blockers resolution, and iteration periods. These are realistic estimates for human planning processes, not linear work time._
+
 ### **🥉 BASIC Level** - MVPs and Rapid Validation
 
 ```yaml
-objective: "Minimum viable specification for development"
-timeframe: "1-2 weeks"
+objective: "Minimum viable specification for AI development"
+human_planning_time: "2-3 weeks (includes meetings, reviews, iterations)"
 ideal_for: "Individual entrepreneurs, prototypes, concept validation"
 
 document_depth:
@@ -104,10 +113,10 @@ document_depth:
   quality_validation: "Functional testing focused on critical paths"
 
 quality_criteria:
-  - Enough to start development without major questions
+  - Enough detail for AI to develop without major questions
   - Clear MVP scope that prevents scope creep
   - Testable core functionalities
-  - Deployable result
+  - Deployable result with minimal human intervention
 
 typical_deliverable:
   - 15-25 pages of complete specifications
@@ -119,8 +128,8 @@ typical_deliverable:
 ### **🥈 STANDARD Level** - Professional Products
 
 ```yaml
-objective: "Complete specification for development teams"
-timeframe: "3-5 weeks"
+objective: "Complete specification for AI development"
+human_planning_time: "4-7 weeks (includes stakeholder alignment, feedback cycles)"
 ideal_for: "Small-medium teams, products with traction, B2C SaaS"
 
 document_depth:
@@ -133,7 +142,7 @@ document_depth:
   quality_validation: "Comprehensive testing including integration and UX"
 
 quality_criteria:
-  - Professional development team can work autonomously
+  - AI can develop autonomously with minimal human validation
   - Scalable beyond MVP with clear roadmap
   - Production-ready quality standards
   - Complete user experience
@@ -148,8 +157,8 @@ typical_deliverable:
 ### **🥇 ADVANCED Level** - Enterprise Solutions
 
 ```yaml
-objective: "Exhaustive specification for enterprise development"
-timeframe: "6-8 weeks"
+objective: "Exhaustive specification for enterprise AI development"
+human_planning_time: "8-12 weeks (includes comprehensive reviews, compliance validation)"
 ideal_for: "Large organizations, complex products, compliance requirements"
 
 document_depth:
@@ -162,7 +171,7 @@ document_depth:
   quality_validation: "Complete testing including security, performance, compliance"
 
 quality_criteria:
-  - Enterprise development teams can implement without clarification
+  - AI can implement enterprise solution without clarification
   - Full compliance with industry regulations
   - Enterprise-grade scalability and security
   - Complete documentation for maintenance
@@ -715,8 +724,8 @@ terminology_consistency:
 
 ```yaml
 successful_delegation:
-  - Development team can start without additional questions
-  - AI can generate functional code from specifications
+  - AI can start development without additional questions
+  - AI can generate functional code from specifications with minimal human input
   - Product owner can validate against clear criteria
   - Stakeholders understand what will be delivered
   - Domain experts confirm accuracy of domain integration
@@ -728,12 +737,13 @@ quality_indicators:
   - Security requirements are implementable
   - Domain expertise is actionable and complete
 
-handoff_readiness:
+ai_development_readiness:
   - Complete specifications for chosen level
   - All dependencies resolved
   - Quality gates passed
   - Stakeholder sign-off obtained
   - Domain expert validation completed (if applicable)
+  - Specifications detailed enough for autonomous AI development
 ```
 
 ### **Common Failure Points**
@@ -783,6 +793,8 @@ metrics_tracking:
 ---
 
 ## 📋 **File Requirements by Implementation Level**
+
+_Note: Times shown are for human planning work (with AI assistance). AI development follows with minimal human validation._
 
 ### **🥉 BASIC Level (1-2 weeks)**
 

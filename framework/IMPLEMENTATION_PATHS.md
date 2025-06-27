@@ -8,15 +8,17 @@
 
 ### **Decision Matrix**
 
-| Project Type                        | Current State             | Recommended Path     | Security Level     | Duration  |
-| ----------------------------------- | ------------------------- | -------------------- | ------------------ | --------- |
-| **New MVP**                         | No documentation          | Greenfield Basic     | Standard           | 1-2 weeks |
-| **New Professional Product**        | Requirements gathering    | Greenfield Standard  | Standard/Elevated  | 3-4 weeks |
-| **New Enterprise Solution**         | Strategic planning        | Greenfield Advanced  | Elevated/Critical  | 5-6 weeks |
-| **Existing Product - No Docs**      | Working product           | Brownfield Full      | Matched to product | 4-6 weeks |
-| **Existing Product - Partial Docs** | Some documentation        | Brownfield Selective | Current/upgraded   | 2-4 weeks |
-| **Existing Product - Inconsistent** | Conflicting documentation | Brownfield Refactor  | Current/audited    | 3-5 weeks |
-| **Legacy System Modernization**     | Legacy system + docs      | Legacy Transition    | Elevated/Critical  | 6-8 weeks |
+| Project Type                        | Current State             | Recommended Path     | Security Level     | Planning Duration* |
+
+_*Includes meetings, stakeholder discussions, review cycles, feedback integration, and iteration periods_
+| ----------------------------------- | ------------------------- | -------------------- | ------------------ | ----------------- |
+| **New MVP**                         | No documentation          | Greenfield Basic     | Standard           | 2-3 weeks         |
+| **New Professional Product**        | Requirements gathering    | Greenfield Standard  | Standard/Elevated  | 4-7 weeks         |
+| **New Enterprise Solution**         | Strategic planning        | Greenfield Advanced  | Elevated/Critical  | 8-12 weeks        |
+| **Existing Product - No Docs**      | Working product           | Brownfield Full      | Matched to product | 6-10 weeks        |
+| **Existing Product - Partial Docs** | Some documentation        | Brownfield Selective | Current/upgraded   | 3-6 weeks         |
+| **Existing Product - Inconsistent** | Conflicting documentation | Brownfield Refactor  | Current/audited    | 4-8 weeks         |
+| **Legacy System Modernization**     | Legacy system + docs      | Legacy Transition    | Elevated/Critical  | 10-16 weeks       |
 
 ---
 
@@ -26,7 +28,7 @@
 
 ```yaml
 context: "New product, concept validation, limited resources"
-duration: "1-2 weeks"
+planning_duration: "2-3 weeks (includes meetings, reviews, stakeholder alignment)"
 team_size: "1-3 people"
 ideal_for:
   - Individual entrepreneurs
@@ -35,15 +37,15 @@ ideal_for:
   - Internal tools
 
 implementation_approach:
-  phase_1_discovery: "3-4 days"
+  phase_1_discovery: "2-3 hours"
     - business_context: "Essential market context and MVP constraints"
     - product_definition: "Core features only with basic user types"
 
-  phase_2_design: "5-6 days"
+  phase_2_design: "2-4 hours"
     - experience_design: "Essential user flows with wireframes"
     - functional_specifications: "Main business logic with basic error handling"
 
-  phase_3_implementation: "2-3 days"
+  phase_3_implementation: "1-2 hours"
     - technical_architecture: "Simple architecture with basic components"
     - quality_validation: "Functional testing focused on critical paths"
 
@@ -64,7 +66,7 @@ common_shortcuts:
 
 ```yaml
 context: "Established business, proven market fit, professional team"
-duration: "3-4 weeks"
+planning_duration: "4-7 weeks (includes comprehensive planning, feedback cycles)"
 team_size: "3-8 people"
 ideal_for:
   - B2C SaaS products
@@ -73,15 +75,15 @@ ideal_for:
   - Product iterations
 
 implementation_approach:
-  phase_1_discovery: "1 week"
+  phase_1_discovery: "4-5 hours"
     - business_context: "Comprehensive competitive analysis and constraints"
     - product_definition: "Complete feature set with detailed user personas"
 
-  phase_2_design: "1.5-2 weeks"
+  phase_2_design: "6-8 hours"
     - experience_design: "Complete user journey with interaction details"
     - functional_specifications: "Detailed business logic with edge cases"
 
-  phase_3_implementation: "0.5-1 week"
+  phase_3_implementation: "2-3 hours"
     - technical_architecture: "Scalable architecture with performance considerations"
     - quality_validation: "Comprehensive testing including integration and UX"
 
@@ -102,7 +104,7 @@ focus_areas:
 
 ```yaml
 context: "Large organization, complex requirements, strict compliance"
-duration: "5-6 weeks"
+planning_duration: "8-12 weeks (includes enterprise reviews, compliance validation)"
 team_size: "8-15 people"
 ideal_for:
   - Enterprise software
@@ -111,15 +113,15 @@ ideal_for:
   - Government systems
 
 implementation_approach:
-  phase_1_discovery: "1.5-2 weeks"
+  phase_1_discovery: "6-8 hours"
     - business_context: "Complete market analysis, risk assessment, compliance"
     - product_definition: "Exhaustive feature set with detailed personas and edge cases"
 
-  phase_2_design: "2.5-3 weeks"
+  phase_2_design: "10-12 hours"
     - experience_design: "Complete omnichannel experience with accessibility"
     - functional_specifications: "Comprehensive business logic with audit trails"
 
-  phase_3_implementation: "1-1.5 weeks"
+  phase_3_implementation: "4-6 hours"
     - technical_architecture: "Enterprise architecture with scalability, monitoring"
     - quality_validation: "Complete testing including security, performance, compliance"
 
@@ -144,10 +146,10 @@ critical_focus:
 
 ```yaml
 context: "Existing product with no or inadequate documentation"
-duration: "4-6 weeks"
+planning_duration: "6-10 weeks (includes product analysis, documentation creation)"
 scope: "Complete framework implementation from existing product"
 
-phase_1_discovery_and_audit: "1-2 weeks"
+phase_1_discovery_and_audit: "4-8 hours"
   audit_current_state:
     - Document existing functionalities
     - Identify current user types and flows
@@ -164,7 +166,7 @@ phase_1_discovery_and_audit: "1-2 weeks"
     - Create user personas from usage data
     - Define scope for current and next versions
 
-phase_2_design_documentation: "2-3 weeks"
+phase_2_design_documentation: "8-12 hours"
   experience_design_mapping:
     - Document all existing user flows
     - Create wireframes matching current implementation
@@ -175,7 +177,7 @@ phase_2_design_documentation: "2-3 weeks"
     - Map existing API endpoints
     - Specify data models from current implementation
 
-phase_3_architecture_and_validation: "1 week"
+phase_3_architecture_and_validation: "4-6 hours"
   technical_architecture_documentation:
     - Document current system architecture
     - Identify scalability and security improvements
@@ -197,17 +199,17 @@ success_criteria:
 
 ```yaml
 context: "Existing product with partial but usable documentation"
-duration: "2-4 weeks"
+planning_duration: "3-6 weeks (includes gap analysis, selective documentation)"
 scope: "Fill critical documentation gaps only"
 
 approach:
-  gap_analysis: "3-5 days"
+  gap_analysis: "2-4 hours"
     - Audit existing documentation quality
     - Identify critical missing elements
     - Prioritize gaps by development impact
     - Map dependencies between documents
 
-  targeted_implementation: "1-3 weeks"
+  targeted_implementation: "6-12 hours"
     priority_1_critical_gaps:
       - Missing functional specifications
       - Incomplete API documentation
@@ -240,10 +242,10 @@ success_criteria:
 
 ```yaml
 context: "Existing documentation that contradicts itself or is outdated"
-duration: "3-5 weeks"
+planning_duration: "4-8 weeks (includes reconciliation, systematic refactoring)"
 scope: "Restructure and align existing documentation with framework"
 
-phase_1_audit_and_reconciliation: "1 week"
+phase_1_audit_and_reconciliation: "4-6 hours"
   conflict_identification:
     - Map all contradictions between documents
     - Identify outdated information vs current reality
@@ -256,7 +258,7 @@ phase_1_audit_and_reconciliation: "1 week"
     - Current user behavior data
     - Latest business priorities
 
-phase_2_systematic_refactoring: "1.5-2 weeks"
+phase_2_systematic_refactoring: "6-10 hours"
   document_by_document_update:
     - business_context: Update based on current business reality
     - product_definition: Align with actual product state
@@ -265,7 +267,7 @@ phase_2_systematic_refactoring: "1.5-2 weeks"
     - technical_architecture: Update to current architecture
     - quality_validation: Align with current testing practices
 
-phase_3_validation_and_coherence: "0.5-1 week"
+phase_3_validation_and_coherence: "2-4 hours"
   cross_document_validation:
     - Ensure terminology consistency
     - Validate all cross-references
@@ -287,10 +289,10 @@ success_criteria:
 
 ```yaml
 context: "Legacy system being modernized or replaced"
-duration: "6-8 weeks"
+planning_duration: "10-16 weeks (includes legacy analysis, modernization planning)"
 scope: "Document current system and plan transition to modern implementation"
 
-phase_1_legacy_analysis: "2 weeks"
+phase_1_legacy_analysis: "8-12 hours"
   current_state_documentation:
     - Complete audit of legacy system functionality
     - Document all business rules embedded in legacy code
@@ -303,7 +305,7 @@ phase_1_legacy_analysis: "2 weeks"
     - Identify security and compliance improvements needed
     - Plan user experience improvements
 
-phase_2_modern_specification: "3 weeks"
+phase_2_modern_specification: "12-16 hours"
   target_state_design:
     - business_context: Modern business requirements and compliance
     - product_definition: Improved feature set maintaining core functionality
@@ -316,7 +318,7 @@ phase_2_modern_specification: "3 weeks"
     - Phased rollout strategy
     - Risk mitigation plans
 
-phase_3_implementation_and_validation: "1-3 weeks"
+phase_3_implementation_and_validation: "4-8 hours"
   modernization_architecture:
     - technical_architecture: Modern, scalable architecture
     - quality_validation: Comprehensive testing including migration validation

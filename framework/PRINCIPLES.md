@@ -2,6 +2,13 @@
 
 ## Design Guidelines for Complete Product Specification
 
+### **Framework Workflow**
+**Human Planning + AI Assistance → AI Development + Human Validation**
+
+The CLARITY Framework operates on a two-phase approach:
+1. **Planning Phase**: Humans create specifications with AI assistance, including non-linear processes (meetings, reviews, iterations)
+2. **Development Phase**: AI systems build the product autonomously with minimal human validation needed
+
 ---
 
 ## 🎯 **Core Principles (1-6)**
@@ -9,17 +16,17 @@
 ### **1. Successful Delegation**
 
 ```yaml
-description: "Only include elements that AI/team needs for correct development"
-test_criteria: "Without this, will the result be incorrect or incomplete?"
+description: "Only include elements that AI systems need for autonomous development"
+test_criteria: "Without this, will the AI result be incorrect or incomplete?"
 application:
   - Each section must directly contribute to final output
   - Eliminate context information that doesn't affect technical decisions
   - Prioritize specifications over conceptual explanations
 
 success_measurement:
-  - Team can develop without additional questions
+  - AI can develop without additional questions
   - Result meets expectations without clarification iterations
-  - AI produces functional code from first iteration
+  - AI produces functional code with minimal human validation needed
 ```
 
 ### **2. Actionable Specification**
@@ -89,15 +96,15 @@ flexibility:
 ### **6. Defined Boundaries**
 
 ```yaml
-description: "Framework ends when product is ready for development"
-test_criteria: "Is it development team or post-development responsibility?"
+description: "Framework ends when product is ready for AI development"
+test_criteria: "Is it AI development or post-development responsibility?"
 application:
   - Include: What to build, how it should work, acceptance criteria
   - Exclude: Specific implementation, deployment, operations
 
 boundary_line:
   - Framework side: "Login must validate email format and password strength"
-  - Development side: "Implement validation with specific regex"
+  - AI development side: "Implement validation with specific regex"
 ```
 
 ---
@@ -160,17 +167,17 @@ coherence_validation:
 ### **10. Delivery Orientation**
 
 ```yaml
-description: "Every element must contribute to generating functional code"
-test_criteria: "Does this element help produce working software?"
+description: "Every element must contribute to AI generating functional code"
+test_criteria: "Does this element help AI produce working software autonomously?"
 application:
   - Business context that informs technical priorities
   - User flows that translate directly to code
-  - Specifications that generate clear development tasks
+  - Specifications that generate clear AI development tasks
 
 utility_test:
-  - Can a developer/AI use this to write code?
-  - Does it generate clarity or confusion in implementation?
-  - Does it reduce or increase development time?
+  - Can an AI system use this to write code autonomously?
+  - Does it generate clarity or confusion in AI implementation?
+  - Does it reduce or increase AI development time?
 ```
 
 ---

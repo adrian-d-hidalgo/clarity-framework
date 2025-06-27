@@ -1,7 +1,7 @@
 # 📱 Product Definition
 
 **Document:** product-definition  
-**Date:** [YYYY-MM-DD]  
+**Recommended Owner:** Product Manager  
 **Security Level:** [Standard/Elevated/Critical]
 
 ---
@@ -154,7 +154,7 @@ feature_y:
     - "[Specific, testable criterion 1]"
   business_value: "[Why this feature is nice to have]"
   technical_complexity: "[High/Medium/Low]"
-  release_timeline: "[When this might be added]"
+  inclusion_criteria: "[Conditions that would trigger adding this feature]"
 # Continue for enhancement features
 ```
 
@@ -449,7 +449,7 @@ external_dependencies:
 - [ ] User personas match user types from business context
 - [ ] Security model matches compliance requirements
 - [ ] Success metrics align with business success metrics
-- [ ] Scope boundaries support business timeline constraints
+- [ ] Scope boundaries support business priority constraints
 
 ---
 
@@ -457,9 +457,9 @@ external_dependencies:
 
 ```yaml
 document_info:
-  creation_date: "[YYYY-MM-DD]"
-  last_updated: "[YYYY-MM-DD]"
-  version: "[VERSION]"
+
+  status: "[DRAFT/FINAL]"
+
 
 stakeholders:
   primary_author: "[Name and role]"

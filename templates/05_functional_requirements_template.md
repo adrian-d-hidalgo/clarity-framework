@@ -1,7 +1,7 @@
 # ⚙️ Functional Requirements
 
 **Document:** functional-requirements  
-**Date:** [YYYY-MM-DD]  
+**Recommended Owner:** Product Manager/Business Analyst  
 **Security Level:** [Standard/Elevated/Critical]
 
 ---
@@ -673,9 +673,9 @@ caching_strategy:
 
 ```yaml
 document_info:
-  creation_date: "[YYYY-MM-DD]"
-  last_updated: "[YYYY-MM-DD]"
-  version: "[VERSION]"
+
+  status: "[DRAFT/FINAL]"
+
 
 stakeholders:
   primary_author: "[Name and role]"

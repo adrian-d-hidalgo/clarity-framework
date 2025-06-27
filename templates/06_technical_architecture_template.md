@@ -1,7 +1,7 @@
 # 🏗️ Technical Architecture
 
 **Document:** architecture  
-**Date:** [YYYY-MM-DD]  
+**Recommended Owner:** Software Architect/Tech Lead  
 **Security Level:** [Standard/Elevated/Critical]
 
 ---
@@ -41,7 +41,7 @@
 3. **Technology Stack** - Core technology choices and justification ⏱️ _90-120 min_
 4. **Security Architecture** - Security implementation details ⏱️ _60-90 min_
 
-**Total CORE time: 4-6 hours**
+**Total CORE time: 4-6 hours** _(human planning work with AI assistance)_
 
 ### **📈 EXTENDED Sections (Complete When Time Allows):**
 
@@ -856,9 +856,9 @@ critical_security_controls:
 
 ```yaml
 document_info:
-  creation_date: "[YYYY-MM-DD]"
-  last_updated: "[YYYY-MM-DD]"
-  version: "[VERSION]"
+
+  status: "[DRAFT/FINAL]"
+
 
 stakeholders:
   primary_author: "[Name and role]"

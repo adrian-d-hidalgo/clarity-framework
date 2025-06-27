@@ -4,6 +4,21 @@ All notable changes to the CLARITY Framework will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.2] - 2025-01-27
+
+### Changed
+
+- **Framework positioning**: Clarified workflow as human planning (with AI assistance) followed by AI development (with minimal human validation)
+- **Realistic planning timelines**: Updated time estimates to reflect non-linear planning process including meetings, reviews, and iterations (Basic: 2-3 weeks, Standard: 4-7 weeks, Advanced: 8-12 weeks)
+- **Professional role recommendations**: Added "Recommended Owner" field to all templates specifying ideal professional profiles for each document
+- **Framework principles**: Updated core principles to reflect AI-focused development workflow and autonomous code generation
+
+### Fixed
+
+- **Project structure**: Added missing `quality/` folder to methodology file tree structure and role boundaries documentation for QA deliverables
+- **Version management**: Removed hardcoded version placeholders from all templates to complete v1.1 centralization initiative
+- **Internal links**: Fixed incorrect file path reference for IMPLEMENTATION_PATHS.md in README
+
 ## [1.1] - 2024-12-19
 
 This release adds change tracking, simplifies versioning approach, and corrects repository references for better framework maintenance.
