@@ -4,7 +4,25 @@ All notable changes to the CLARITY Framework will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [1.2] - 2025-01-27
+## [1.3] - 2025-06-27
+
+### Added
+
+- **Framework Utilities System**: Organized system for framework automation tools
+- **AI-compatible prompts**: Created `prompts/` directory for systematic framework updates
+- **Framework update prompt**: Systematic prompt for version migration with AI assistance
+
+### Changed
+
+- **Content Organization**: Separated functional content from documentation
+- **Templates and prompts**: Now contain only functional content
+- **Utilities documentation**: Centralized in `framework/FRAMEWORK_UTILITIES.md`
+
+### Fixed
+
+- **Version dates**: Corrected release dates for all versions to reflect accurate timeline (1.0-1.1: June 26, 1.2-1.3: June 27, 2025)
+
+## [1.2] - 2025-06-27
 
 ### Changed
 
@@ -19,7 +37,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **Version management**: Removed hardcoded version placeholders from all templates to complete v1.1 centralization initiative
 - **Internal links**: Fixed incorrect file path reference for IMPLEMENTATION_PATHS.md in README
 
-## [1.1] - 2024-12-19
+## [1.1] - 2025-06-26
 
 This release adds change tracking, simplifies versioning approach, and corrects repository references for better framework maintenance.
 
@@ -33,7 +51,7 @@ This release adds change tracking, simplifies versioning approach, and corrects 
 - Updated repository URLs to correct remote (adrian-d-hidalgo/clarity-framework)
 - Standardized template headers by removing redundant framework information and YAML metadata, keeping only essential document metadata
 
-## [1.0] - 2024-01-15
+## [1.0] - 2025-06-26
 
 Initial release of the CLARITY Framework with complete methodology, principles, and template system for product specification development.
 

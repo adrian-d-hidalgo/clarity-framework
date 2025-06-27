@@ -1,7 +1,7 @@
 # 🚀 CLARITY Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Version](https://img.shields.io/badge/version-1.2-blue.svg)
+![Version](https://img.shields.io/badge/version-1.3-blue.svg)
 ![Framework](https://img.shields.io/badge/type-methodology-green.svg)
 ![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)
 [![Contributors](https://img.shields.io/github/contributors/adrian-d-hidalgo/clarity-framework.svg)](https://github.com/adrian-d-hidalgo/clarity-framework/graphs/contributors)
@@ -9,7 +9,7 @@
 
 A structured approach to creating complete product specifications through human planning (with AI assistance) that enables AI systems to build exactly what you envision, with minimal human validation needed.
 
-**Current Version: 1.2** | [View Changelog](CHANGELOG.md)
+**Current Version: 1.3** | [View Changelog](CHANGELOG.md)
 
 ---
 
@@ -77,10 +77,10 @@ You follow a sequence of documents organized by **roles** that, when completed, 
 
 ### **⏱️ Time Investment & Completeness Levels**
 
-| Level           | Planning Time | Ideal For                                     | Result                                              |
-| --------------- | ------------- | --------------------------------------------- | --------------------------------------------------- |
-| **🥉 Basic**    | 2-3 weeks     | MVPs, prototypes, concept validation          | Minimum viable specification for AI development     |
-| **🥈 Standard** | 4-7 weeks     | Professional products, small-medium teams     | Complete specification for AI development           |
+| Level           | Planning Time | Ideal For                                     | Result                                                 |
+| --------------- | ------------- | --------------------------------------------- | ------------------------------------------------------ |
+| **🥉 Basic**    | 2-3 weeks     | MVPs, prototypes, concept validation          | Minimum viable specification for AI development        |
+| **🥈 Standard** | 4-7 weeks     | Professional products, small-medium teams     | Complete specification for AI development              |
 | **🥇 Advanced** | 8-12 weeks    | Enterprise solutions, compliance requirements | Exhaustive specification for enterprise AI development |
 
 ---
@@ -191,6 +191,7 @@ mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas}
 | **[METHODOLOGY.md](framework/METHODOLOGY.md)**                   | Complete step-by-step process         | To implement the framework             |
 | **[IMPLEMENTATION_PATHS.md](framework/IMPLEMENTATION_PATHS.md)** | Strategies by project type            | For specific implementation approaches |
 | **[COLLABORATION_GUIDE.md](framework/COLLABORATION_GUIDE.md)**   | Team coordination                     | To organize roles and responsibilities |
+| **[FRAMEWORK_UTILITIES.md](framework/FRAMEWORK_UTILITIES.md)**   | Available utilities and prompts       | For automation and advanced workflows  |
 
 ### **📝 Work Templates**
 
@@ -205,6 +206,23 @@ mkdir -p .handbook/{product,design/assets,technical/{standards,diagrams,schemas}
 | **[Technical Architecture](templates/06_technical_architecture_template.md)**   | Architect | `.handbook/technical/` | How to build             |
 | **[Quality Validation](templates/07_quality_validation_template.md)**           | PM        | `.handbook/product/`   | How to verify            |
 | **[QA Deliverables](templates/08_qa_deliverables_template.md)**                 | QA Lead   | `.handbook/quality/`   | Testing execution        |
+
+### **🤖 AI-Assisted Framework Utilities**
+
+| Utility                                                           | Purpose                          | When to Use                  |
+| ----------------------------------------------------------------- | -------------------------------- | ---------------------------- |
+| **[Framework Utilities Guide](framework/FRAMEWORK_UTILITIES.md)** | Complete utilities documentation | For automation and workflows |
+
+---
+
+## 🛠️ Framework Utilities
+
+For advanced users, the framework provides specialized utilities for automating framework workflows:
+
+- **[Framework Utilities Guide](framework/FRAMEWORK_UTILITIES.md)**: Complete documentation of available utilities
+- **AI-assisted update prompt** for systematic framework version migration
+
+These tools are entirely optional and designed to work with AI assistants for automating framework tasks.
 
 ---
 
