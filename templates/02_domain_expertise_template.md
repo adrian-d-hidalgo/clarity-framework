@@ -1,12 +1,35 @@
 # 🧠 Domain Expertise
 
-## Specialized Sector Knowledge
-
 **Document:** domain-expertise  
-**Framework:** CLARITY Framework v1.0
-**Version:** 1.0  
 **Date:** [YYYY-MM-DD]  
 **Security Level:** [Standard/Elevated/Critical]
+
+---
+
+## 📋 **Document Dependencies**
+
+**Requires completion of:**
+
+- **business-context.md**: Business model, user types, security requirements
+
+**Provides to next documents:**
+
+- **product-definition.md**: Domain-specific user characteristics, compliance requirements
+- **experience-design.md**: Domain-specific user needs, accessibility requirements
+- **functional-requirements.md**: Domain-specific requirements, compliance standards
+- **technical-architecture.md**: Compliance requirements, industry standards
+
+---
+
+## ✅ **Quality Gates**
+
+**Before proceeding to next documents, ensure:**
+
+- [ ] Domain-specific user characteristics identified
+- [ ] Compliance requirements documented
+- [ ] Industry standards researched
+- [ ] Domain constraints understood
+- [ ] Specialized terminology defined
 
 ---
 
@@ -508,7 +531,7 @@ domain_specific_ui_patterns:
 document_info:
   creation_date: "[YYYY-MM-DD]"
   last_updated: "[YYYY-MM-DD]"
-  version: "1.0"
+  version: "[VERSION]"
 
 stakeholders:
   primary_author: "[Name and role - Domain Expert]"
@@ -521,7 +544,7 @@ dependencies:
     ["product-definition", "experience-design", "functional-requirements"]
 
 security_classification: "[Standard/Elevated/Critical]"
-framework_compliance: "CLARITY Framework v1.0"
+framework_compliance: "CLARITY Framework"
 
 domain_metadata:
   domain_name: "[Specific domain name]"
@@ -541,10 +564,10 @@ domain_metadata:
 ---
 
 document: "domain-expertise"
-version: "1.0"
+version: "[VERSION]"
 last_updated: "[YYYY-MM-DD]"
 template_type: "domain_analysis"
-framework: "CLARITY Framework v1.0"
+framework: "CLARITY Framework"
 role_primary: "Product Manager"
 deliverable_location: ".handbook/product/domain-expertise.md"
 

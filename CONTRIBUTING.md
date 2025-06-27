@@ -44,7 +44,7 @@ Before contributing, you must create an issue using the appropriate template:
 ### 2. **Fork and Clone**
 
 ```bash
-git clone https://github.com/your-username/clarity-framework.git
+git clone https://github.com/adrian-d-hidalgo/clarity-framework.git
 cd clarity-framework
 ```
 

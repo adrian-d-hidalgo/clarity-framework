@@ -1,37 +1,35 @@
----
-document: "experience-design"
-version: "1.0"
-last_updated: "[YYYY-MM-DD]"
-template_type: "ux_design"
-framework: "CLARITY Framework v1.0"
-role_primary: "UX Designer"
-deliverable_location: ".handbook/design/experience-design.md"
-
-dependencies:
-  inputs_from:
-    ["01_business_context", "02_domain_expertise", "03_product_definition"]
-  outputs_to: ["functional-requirements", "06_technical_architecture"]
-
-validation_criteria:
-  - Complete user journey flows documented
-  - All user interfaces wireframed
-  - Interaction patterns specified
-  - Accessibility requirements addressed
-  - Design system foundations established
-
-security_classification: "[Standard/Elevated/Critical]"
-framework_compliance: "CLARITY Framework v1.0"
----
-
 # 🎨 Experience Design
 
-## How It Should Function and Look
-
 **Document:** experience-design  
-**Framework:** CLARITY Framework v1.0
-**Version:** 1.0  
 **Date:** [YYYY-MM-DD]  
 **Security Level:** [Standard/Elevated/Critical]
+
+---
+
+## 📋 **Document Dependencies**
+
+**Requires completion of:**
+
+- **business-context.md**: User types, business constraints, security requirements
+- **domain-expertise.md**: Domain-specific user characteristics, compliance requirements
+- **product-definition.md**: User personas, feature specifications, content structure
+
+**Provides to next documents:**
+
+- **functional-requirements.md**: Interface specifications, user interaction patterns
+- **technical-architecture.md**: Performance requirements, accessibility needs
+
+---
+
+## ✅ **Quality Gates**
+
+**Before proceeding to next documents, ensure:**
+
+- [ ] Complete user journey flows documented
+- [ ] All user interfaces wireframed
+- [ ] Interaction patterns specified
+- [ ] Accessibility requirements addressed
+- [ ] Design system foundations established
 
 ---
 
@@ -767,7 +765,7 @@ empty_states:
 document_info:
   creation_date: "[YYYY-MM-DD]"
   last_updated: "[YYYY-MM-DD]"
-  version: "1.0"
+  version: "[VERSION]"
 
 stakeholders:
   primary_author: "[Name and role]"
@@ -780,7 +778,7 @@ dependencies:
   outputs_to: ["functional-requirements", "06_technical_architecture"]
 
 security_classification: "[Standard/Elevated/Critical]"
-framework_compliance: "CLARITY Framework v1.0"
+framework_compliance: "CLARITY Framework"
 ```
 
 ---

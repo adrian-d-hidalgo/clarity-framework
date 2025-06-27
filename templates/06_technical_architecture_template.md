@@ -1,28 +1,34 @@
----
-document: "architecture"
-version: "1.0"
-last_updated: "[YYYY-MM-DD]"
-template_type: "technical_architecture"
-framework: "CLARITY Framework v1.0"
-role_primary: "Software Architect"
-deliverable_location: ".handbook/technical/architecture.md"
-
-dependencies:
-  inputs_from:
-    ["01_business_context", "02_domain_expertise", "functional-requirements"]
-  outputs_to: ["07_quality_validation"]
-
-validation_criteria:
-  - Technical architecture supports all requirements
-  - Technology stack justified and documented
-  - Scalability and performance requirements addressed
-  - Security architecture integrated
-  - Deployment strategy defined
----
-
 # 🏗️ Technical Architecture
 
-## How to Build It
+**Document:** architecture  
+**Date:** [YYYY-MM-DD]  
+**Security Level:** [Standard/Elevated/Critical]
+
+---
+
+## 📋 **Document Dependencies**
+
+**Requires completion of:**
+
+- **business-context.md**: Scale requirements, business constraints, security needs
+- **domain-expertise.md**: Compliance requirements, industry standards
+- **functional-requirements.md**: System requirements, API specifications
+
+**Provides to next documents:**
+
+- **quality-validation.md**: Performance criteria, deployment requirements
+
+---
+
+## ✅ **Quality Gates**
+
+**Before proceeding to next documents, ensure:**
+
+- [ ] Technical architecture supports all requirements
+- [ ] Technology stack justified and documented
+- [ ] Scalability and performance requirements addressed
+- [ ] Security architecture integrated
+- [ ] Deployment strategy defined
 
 ---
 
@@ -852,7 +858,7 @@ critical_security_controls:
 document_info:
   creation_date: "[YYYY-MM-DD]"
   last_updated: "[YYYY-MM-DD]"
-  version: "1.0"
+  version: "[VERSION]"
 
 stakeholders:
   primary_author: "[Name and role]"
@@ -865,7 +871,7 @@ dependencies:
   outputs_to: ["07_quality_validation"]
 
 security_classification: "[Standard/Elevated/Critical]"
-framework_compliance: "CLARITY Framework v1.0"
+framework_compliance: "CLARITY Framework"
 ```
 
 ---

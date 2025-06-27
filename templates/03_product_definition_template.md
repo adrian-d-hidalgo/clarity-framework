@@ -1,39 +1,33 @@
+# 📱 Product Definition
+
+**Document:** product-definition  
+**Date:** [YYYY-MM-DD]  
+**Security Level:** [Standard/Elevated/Critical]
+
 ---
-document: "product-definition"
-version: "1.0"
-last_updated: "[YYYY-MM-DD]"
-template_type: "product_specification"
-framework: "CLARITY Framework v1.0"
-role_primary: "Product Manager"
-deliverable_location: ".handbook/product/product-definition.md"
 
 ## 📋 **Document Dependencies**
 
 **Requires completion of:**
+
 - **business-context.md**: User types, business model, success metrics, security level
 - **domain-expertise.md**: Domain-specific user characteristics, compliance requirements, industry standards
 
 **Provides to next documents:**
+
 - **experience-design.md**: User personas, feature specifications, content structure
 - **functional-requirements.md**: Feature acceptance criteria, data models, business rules
 
-**Quality Gates:**
-- [ ] Feature scope clearly defined and bounded
-- [ ] User personas complete with domain-informed characteristics  
-- [ ] Success metrics identified and measurable
-- [ ] Version roadmap established
-- [ ] Technical feasibility validated
 ---
 
-# 📱 Product Definition
+## ✅ **Quality Gates**
 
-## What Exactly to Build
+**Before proceeding to next documents, ensure:**
 
-**Document:** product-definition  
-**Framework:** CLARITY Framework v1.0
-**Version:** 1.0  
-**Date:** [YYYY-MM-DD]  
-**Security Level:** [Standard/Elevated/Critical]
+- [ ] Feature scope clearly defined and bounded
+- [ ] User personas complete with domain-informed characteristics
+- [ ] Success metrics identified and measurable
+- [ ] Technical feasibility validated
 
 ---
 
@@ -465,7 +459,7 @@ external_dependencies:
 document_info:
   creation_date: "[YYYY-MM-DD]"
   last_updated: "[YYYY-MM-DD]"
-  version: "1.0"
+  version: "[VERSION]"
 
 stakeholders:
   primary_author: "[Name and role]"
@@ -477,7 +471,7 @@ dependencies:
   outputs_to: ["04_experience_design", "functional-requirements"]
 
 security_classification: "[Standard/Elevated/Critical]"
-framework_compliance: "CLARITY Framework v1.0"
+framework_compliance: "CLARITY Framework"
 ```
 
 ---

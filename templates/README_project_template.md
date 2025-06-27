@@ -1,8 +1,6 @@
 # 📚 Project Documentation
 
-## CLARITY Framework v1.0 Implementation
-
-This project uses the **CLARITY Framework v1.0** for comprehensive product development documentation. This README will guide you through the documentation structure and help you find the information you need.
+This project uses the **CLARITY Framework** for comprehensive product development documentation. This README will guide you through the documentation structure and help you find the information you need.
 
 ---
 
@@ -217,8 +215,8 @@ _See framework documentation for complete file requirements by level._
 
 ## 🔧 **Framework Information**
 
-- **Framework Version**: CLARITY Framework v1.0
-- **Framework Repository**: [Add link to framework repository]
+- **Framework**: CLARITY Framework
+- **Framework Repository**: [CLARITY Framework](https://github.com/adrian-d-hidalgo/clarity-framework)
 - **Template Location**: `/templates/`
 - **Documentation Standard**: All documents follow CLARITY Framework methodology
 

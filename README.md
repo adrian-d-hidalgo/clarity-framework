@@ -1,13 +1,15 @@
 # 🚀 CLARITY Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.1-blue.svg)
 ![Framework](https://img.shields.io/badge/type-methodology-green.svg)
 ![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)
-[![Contributors](https://img.shields.io/github/contributors/adrianhidalgoflores/clarity-framework.svg)](https://github.com/adrianhidalgoflores/clarity-framework/graphs/contributors)
-![Last Commit](https://img.shields.io/github/last-commit/adrianhidalgoflores/clarity-framework.svg)
+[![Contributors](https://img.shields.io/github/contributors/adrian-d-hidalgo/clarity-framework.svg)](https://github.com/adrian-d-hidalgo/clarity-framework/graphs/contributors)
+![Last Commit](https://img.shields.io/github/last-commit/adrian-d-hidalgo/clarity-framework.svg)
 
 A structured approach to creating complete product specifications that transform project ideas into detailed documentation, guiding development teams and AI systems to build what you envision while reducing miscommunication and costly iterations.
+
+**Current Version: 1.1** | [View Changelog](CHANGELOG.md)
 
 ---
 
