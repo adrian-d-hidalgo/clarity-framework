@@ -1,0 +1,79 @@
+name: ❓ Question
+description: Ask a question about the CLARITY Framework
+title: "[QUESTION] "
+labels: ["question", "help wanted"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about the CLARITY Framework? We're here to help!
+
+  - type: dropdown
+    id: question-type
+    attributes:
+      label: Question Type
+      description: What type of question do you have?
+      options:
+        - Getting Started (how to begin using the framework)
+        - Template Usage (how to use specific templates)
+        - Methodology (understanding the framework approach)
+        - Best Practices (recommended approaches)
+        - Customization (adapting templates to specific needs)
+        - Integration (using with other tools/processes)
+        - Troubleshooting (something isn't working as expected)
+        - Other
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: "Ask your question in detail..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Help us understand your situation
+      placeholder: "What type of project are you working on? What have you tried so far? What's your role?"
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgent is this question for you?
+      options:
+        - Just curious (no time pressure)
+        - Planning ahead (working on it this week)
+        - Active project (need answer soon)
+        - Blocked (can't proceed without answer)
+      default: 0
+
+  - type: dropdown
+    id: experience-level
+    attributes:
+      label: Your Experience Level
+      description: How familiar are you with the CLARITY Framework?
+      options:
+        - Complete beginner
+        - Some experience
+        - Regular user
+        - Advanced user
+      default: 0
+
+  - type: checkboxes
+    id: research
+    attributes:
+      label: Research Done
+      description: What have you already tried?
+      options:
+        - label: I have read the README
+        - label: I have reviewed the relevant templates
+        - label: I have checked existing issues
+        - label: I have read the methodology documentation 

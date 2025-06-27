@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Framework Documentation
+    url: https://github.com/adrianhidalgoflores/clarity-framework/blob/main/README.md
+    about: Start here to learn how to use the CLARITY Framework
+  - name: 💬 Discussions
+    url: https://github.com/adrianhidalgoflores/clarity-framework/discussions
+    about: Ask questions, share ideas, and connect with the community
+  - name: 📖 Methodology Guide
+    url: https://github.com/adrianhidalgoflores/clarity-framework/blob/main/framework/METHODOLOGY.md
+    about: Understand the framework's methodology and principles 

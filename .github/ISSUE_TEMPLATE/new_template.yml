@@ -1,0 +1,102 @@
+name: 📋 New Template Request
+description: Request a new template to be added to the CLARITY Framework
+title: "[TEMPLATE] "
+labels: ["template", "enhancement", "needs-analysis"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help expand the CLARITY Framework with a new template! Describe what template would be valuable.
+
+  - type: input
+    id: template-name
+    attributes:
+      label: Template Name
+      description: What should this template be called?
+      placeholder: "e.g., Marketing Strategy Template, Risk Assessment Template"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: template-category
+    attributes:
+      label: Template Category
+      description: Where would this template fit in the framework?
+      options:
+        - Business Context (market, stakeholders, goals)
+        - Domain Expertise (technical requirements, constraints)
+        - Product Definition (features, specifications)
+        - Experience Design (user journey, interface)
+        - Implementation (technical architecture, development)
+        - Quality & Validation (testing, acceptance criteria)
+        - Operations (deployment, maintenance, support)
+        - New Category (doesn't fit existing categories)
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: template-purpose
+    attributes:
+      label: Template Purpose
+      description: What problem would this template solve? What would it help users accomplish?
+      placeholder: "Describe the specific need this template would address..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: template-sections
+    attributes:
+      label: Proposed Template Sections
+      description: What main sections should this template include?
+      placeholder: |
+        List the key sections you think this template needs:
+        - Section 1: Purpose and description
+        - Section 2: What it would cover
+        - etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case Example
+      description: Provide a concrete example of when/how this template would be used
+      placeholder: "For example: A startup creating a fintech app would use this template to..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target-users
+    attributes:
+      label: Primary Users
+      description: Who would primarily use this template?
+      options:
+        - CEOs/Founders
+        - Product Managers
+        - Developers/Engineers
+        - Designers
+        - Business Analysts
+        - Consultants
+        - All roles
+      default: 0
+
+  - type: textarea
+    id: framework-integration
+    attributes:
+      label: Framework Integration
+      description: How would this template integrate with existing CLARITY Framework templates?
+      placeholder: "Describe how this template would connect to or build upon existing templates..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have reviewed existing templates to ensure this is not a duplicate
+          required: true
+        - label: This template aligns with CLARITY Framework methodology
+          required: true
+        - label: I can provide examples or contribute to template development
+          required: false 

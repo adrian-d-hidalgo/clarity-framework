@@ -1,0 +1,93 @@
+name: 🚀 Methodology Enhancement
+description: Suggest improvements to the CLARITY Framework methodology itself
+title: "[METHODOLOGY] "
+labels: ["methodology", "enhancement", "discussion"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help evolve the CLARITY Framework methodology! Share your ideas for improving the framework approach.
+
+  - type: dropdown
+    id: enhancement-type
+    attributes:
+      label: Type of Enhancement
+      description: What aspect of the methodology needs improvement?
+      options:
+        - Framework Structure (template organization, workflow)
+        - Process Flow (step sequence, dependencies between templates)
+        - Integration (how templates work together)
+        - Usability (ease of use, learning curve)
+        - Scalability (framework adaptability to different project sizes)
+        - AI Optimization (better guidance for AI systems)
+        - Team Collaboration (multi-person workflow improvements)
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-limitation
+    attributes:
+      label: Current Limitation
+      description: What limitation or challenge have you identified in the current methodology?
+      placeholder: "Describe the specific problem or inefficiency you've experienced..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-enhancement
+    attributes:
+      label: Proposed Enhancement
+      description: What specific improvement do you suggest?
+      placeholder: "Describe your proposed solution, new approach, or methodology change..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      description: How would this enhancement improve the framework?
+      placeholder: "e.g., Reduces time to complete specifications, improves clarity, better AI integration..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Approach
+      description: How could this enhancement be implemented? What would need to change?
+      placeholder: "Describe what changes would be needed to documentation, templates, or process..."
+
+  - type: dropdown
+    id: user-experience
+    attributes:
+      label: Your Framework Experience
+      description: How much experience do you have with the CLARITY Framework?
+      options:
+        - New user (just started using it)
+        - Occasional user (used a few times)
+        - Regular user (use it frequently)
+        - Expert user (extensive experience)
+        - Framework contributor
+      default: 0
+
+  - type: textarea
+    id: use-case-context
+    attributes:
+      label: Use Case Context
+      description: In what context did you identify this enhancement need?
+      placeholder: "e.g., While working on mobile app project, during team onboarding, consulting engagement..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have thoroughly used the current methodology
+          required: true
+        - label: I have checked existing issues for similar suggestions
+          required: true
+        - label: This enhancement maintains framework consistency and principles
+          required: true 

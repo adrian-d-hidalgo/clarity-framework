@@ -1,0 +1,145 @@
+name: 💡 Use Case Contribution
+description: Share a real-world example of using the CLARITY Framework
+title: "[USE CASE] "
+labels: ["use-case", "documentation", "example"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help others learn from your experience! Share how you used the CLARITY Framework in a real project.
+
+  - type: input
+    id: project-type
+    attributes:
+      label: Project Type
+      description: What type of project did you work on?
+      placeholder: "e.g., Mobile App, Web Platform, SaaS Product, Enterprise System"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: industry
+    attributes:
+      label: Industry/Domain
+      description: What industry or domain was this project in?
+      options:
+        - Technology/Software
+        - Financial Services
+        - Healthcare
+        - E-commerce/Retail
+        - Education
+        - Manufacturing
+        - Government/Public Sector
+        - Non-profit
+        - Consulting
+        - Other
+      default: 0
+
+  - type: dropdown
+    id: project-size
+    attributes:
+      label: Project Size
+      description: What was the approximate size/scope of the project?
+      options:
+        - Small (1-3 people, weeks)
+        - Medium (4-10 people, months)
+        - Large (10+ people, 6+ months)
+        - Enterprise (multiple teams, 1+ years)
+      default: 0
+
+  - type: textarea
+    id: project-context
+    attributes:
+      label: Project Context
+      description: Briefly describe the project and its goals
+      placeholder: "What were you building? What problem were you solving? Who were the users?"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: templates-used
+    attributes:
+      label: Templates Used
+      description: Which CLARITY Framework templates did you use?
+      options:
+        - label: Business Context Template
+        - label: Domain Expertise Template
+        - label: Product Definition Template
+        - label: Experience Design Template
+        - label: Functional Specifications Template
+        - label: Technical Architecture Template
+        - label: Quality Validation Template
+        - label: QA Deliverables Template
+
+  - type: textarea
+    id: framework-application
+    attributes:
+      label: How You Applied the Framework
+      description: Describe how you used the CLARITY Framework in your project
+      placeholder: "Walk through your process: which templates you started with, how you filled them out, what order you followed..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: key-outcomes
+    attributes:
+      label: Key Outcomes
+      description: What were the main results or benefits you achieved?
+      placeholder: "e.g., Clearer requirements, better team alignment, faster development, improved stakeholder communication..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: lessons-learned
+    attributes:
+      label: Lessons Learned
+      description: What insights did you gain? What would you do differently?
+      placeholder: "Share what worked well, what was challenging, and advice for others..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: framework-adaptations
+    attributes:
+      label: Framework Adaptations
+      description: Did you modify or adapt any templates for your specific needs?
+      placeholder: "Describe any customizations, additions, or modifications you made..."
+
+  - type: dropdown
+    id: team-composition
+    attributes:
+      label: Team Composition
+      description: What roles were involved in using the framework?
+      options:
+        - Solo (just me)
+        - Technical team (developers, architects)
+        - Cross-functional (product, design, development)
+        - Leadership + execution teams
+        - Client + consultant team
+        - Other
+      default: 0
+
+  - type: dropdown
+    id: sharing-level
+    attributes:
+      label: Sharing Preference
+      description: What level of detail are you comfortable sharing?
+      options:
+        - General approach and lessons (anonymous)
+        - Detailed process with project type
+        - Full case study with project details
+        - Contact me for more details
+      default: 0
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Contribution Checklist
+      options:
+        - label: I have used the CLARITY Framework in a real project
+          required: true
+        - label: I can share insights that would help other framework users
+          required: true
+        - label: I'm comfortable with this use case being shared publicly
+          required: true 

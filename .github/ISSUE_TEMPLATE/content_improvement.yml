@@ -1,0 +1,86 @@
+name: 📝 Content Improvement
+description: Suggest improvements to existing documentation, templates, or methodology content
+title: "[CONTENT] "
+labels: ["enhancement", "documentation", "needs-review"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the CLARITY Framework! Please describe what content needs improvement.
+
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Type of Content
+      description: What type of content needs improvement?
+      options:
+        - Documentation (README, guides, methodology)
+        - Template (business context, technical architecture, etc.)
+        - Examples (use cases, sample outputs)
+        - Structure (organization, navigation, flow)
+        - Language/Clarity (wording, explanations, instructions)
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Content Location
+      description: Which specific document(s) or section(s)?
+      placeholder: "e.g., README.md Quick Start section, templates/01_business_context_template.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-content
+    attributes:
+      label: Current Content Issues
+      description: What specifically needs improvement in the current content?
+      placeholder: "Describe what makes the current content unclear, incomplete, or ineffective..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-improvement
+    attributes:
+      label: Proposed Improvement
+      description: How should this content be improved?
+      placeholder: "Describe your suggested changes, additions, or restructuring..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-impact
+    attributes:
+      label: User Impact
+      description: How will this improvement help framework users?
+      placeholder: "e.g., Makes onboarding easier, reduces confusion, improves template effectiveness..."
+
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: Your Role
+      description: What's your primary role when using this framework?
+      options:
+        - CEO/Founder
+        - Product Manager
+        - Developer
+        - Technical Writer
+        - Consultant
+        - Designer
+        - Other
+      default: 0
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have reviewed existing issues to avoid duplicates
+          required: true
+        - label: I have read the current content thoroughly
+          required: true
+        - label: My suggestion aligns with the framework's methodology principles
+          required: true 
